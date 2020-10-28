@@ -1,1 +1,3 @@
 TallerPipesAngular
+
+![](img/img.png)

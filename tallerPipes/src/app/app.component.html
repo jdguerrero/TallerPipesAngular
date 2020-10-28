@@ -63,6 +63,17 @@
       <td> {{fecha18HorasAtras | pipe3Dia }}</td>
     </tr>
 
+    <tr>
+      <th scope="row">5</th>
+      <td > {{fecha18HorasAtras | date : "medium"}} </td>
+      <td> {{fecha18HorasAtras | pipe4Horas24 }}</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td > {{fecha2DiasAtras | date:"medium"}} </td>
+      <td> {{fecha2DiasAtras | pipe4Horas24 }}</td>
+    </tr>
+
   </tbody>
 </table>
 </div>

@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { Pipe1HoraPipe } from './pipes/pipe1-hora.pipe';
 import { Pipe2HorasPipe } from './pipes/pipe2-horas.pipe';
 import { Pipe3DiaPipe } from './pipes/pipe3-dia.pipe';
+import { Pipe4Horas24Pipe } from './pipes/pipe4-horas24.pipe';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { Pipe3DiaPipe } from './pipes/pipe3-dia.pipe';
     AppComponent,
     Pipe1HoraPipe,
     Pipe2HorasPipe,
-    Pipe3DiaPipe
+    Pipe3DiaPipe,
+    Pipe4Horas24Pipe
   ],
   imports: [
     BrowserModule

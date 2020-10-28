@@ -21,6 +21,8 @@ export class AppComponent {
 
   fecha18HorasAtras: Date;
 
+  fecha2DiasAtras: Date;
+
 
 
 
@@ -54,6 +56,11 @@ export class AppComponent {
      * fecha actual en milisegundos menos 64800000 milisegundos ... (18 horas)
      */
     this.fecha18HorasAtras = new Date(this.fechaActual.valueOf() - 64800000);
+
+    /**
+     * fecha actual en milisegundos menos 172800000 milisegundos ... (48 horas - 2 dias)
+     */
+    this.fecha2DiasAtras = new Date(this.fechaActual.valueOf() - 172800000);
 
   
   }

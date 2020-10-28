@@ -16,12 +16,12 @@ export class Pipe1HoraPipe implements PipeTransform {
 
     this.date = new Date(fecha);
 
-    if(this.date.getFullYear == this.currentDate.getFullYear && this.date.getMonth == this.currentDate.getMonth && this.date.getDay == this.currentDate.getDay && this.date.getHours == this.currentDate.getHours){
+    if(this.date.getFullYear() == this.currentDate.getFullYear() && this.date.getMonth() == this.currentDate.getMonth() && this.date.getDay() == this.currentDate.getDay() && this.date.getHours() == this.currentDate.getHours()){
 
       return "Conectado Hace Pocos Minutos";
 
     }else{
-      return fecha;
+      return this.date.toDateString();
     }
     
   }

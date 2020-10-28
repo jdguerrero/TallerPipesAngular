@@ -29,11 +29,29 @@
       <td>ejemplo mayusculas pipes</td>
       <td>{{ 'ejemplo mayusculas pipes'  | titlecase}}</td>
     </tr>
+
     <tr>
-      <th scope="row">3</th>
+      <th scope="row">2</th>
       <td > {{fecha3MinAtras | date : "medium"}} </td>
       <td> {{fecha3MinAtras | pipe1Hora }}</td>
     </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td > {{fecha2HorasAtras | date : "medium"}} </td>
+      <td> {{fecha2HorasAtras | pipe1Hora }}</td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td > {{fecha2HorasAtras | date : "medium"}} </td>
+      <td> {{fecha2HorasAtras | pipe2Horas }}</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td > {{fecha12HorasAtras | date : "medium"}} </td>
+      <td> {{fecha12HorasAtras | pipe2Horas }}</td>
+    </tr>
+
   </tbody>
 </table>
 </div>

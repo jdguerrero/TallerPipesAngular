@@ -74,6 +74,17 @@
       <td> {{fecha2DiasAtras | pipe4Horas24 }}</td>
     </tr>
 
+    <tr>
+      <th scope="row">6</th>
+      <td > {{fecha2DiasAtras | date : "medium"}} </td>
+      <td> {{fecha2DiasAtras | pipe5MismoMes }}</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td > {{fecha1mes1DiaAtras | date:"medium"}} </td>
+      <td> {{fecha1mes1DiaAtras | pipe5MismoMes }}</td>
+    </tr>
+
   </tbody>
 </table>
 </div>

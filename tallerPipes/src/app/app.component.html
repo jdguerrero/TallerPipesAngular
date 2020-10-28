@@ -85,6 +85,28 @@
       <td> {{fecha1mes1DiaAtras | pipe5MismoMes }}</td>
     </tr>
 
+    <tr>
+      <th scope="row">7</th>
+      <td > {{fecha1mes1DiaAtras | date : "medium"}} </td>
+      <td> {{fecha1mes1DiaAtras | pipe6MesAnt }}</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td > {{fecha3mesAtras | date:"medium"}} </td>
+      <td> {{fecha3mesAtras | pipe6MesAnt }}</td>
+    </tr>
+
+    <tr>
+      <th scope="row">8</th>
+      <td > {{fecha3mesAtras | date : "medium"}} </td>
+      <td> {{fecha3mesAtras | pipeAnnio }}</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td > {{fecha2anniosAtras | date:"medium"}} </td>
+      <td> {{fecha2anniosAtras | pipeAnnio }}</td>
+    </tr>
+
   </tbody>
 </table>
 </div>

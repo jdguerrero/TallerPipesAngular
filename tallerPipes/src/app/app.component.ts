@@ -25,6 +25,10 @@ export class AppComponent {
 
   fecha1mes1DiaAtras: Date;
 
+  fecha3mesAtras: Date;
+
+  fecha2anniosAtras: Date;
+
   constructor(){
 
     this.fechaActual = new Date();
@@ -66,6 +70,16 @@ export class AppComponent {
      * fecha actual en milisegundos menos 2764800000 milisegundos ... (32 dias atras)
      */
     this.fecha1mes1DiaAtras = new Date(this.fechaActual.valueOf() - 2764800000);
+
+    /**
+     * fecha actual en milisegundos menos 8035200000 milisegundos ... (3 meses atras - 90 dias)
+     */
+    this.fecha3mesAtras = new Date(this.fechaActual.valueOf() - 8035200000);
+
+    /**
+     * fecha actual en milisegundos menos 63072000000 milisegundos ... (2 años - 730 dias)
+     */
+    this.fecha2anniosAtras = new Date(this.fechaActual.valueOf() - 63072000000);
 
   
   }

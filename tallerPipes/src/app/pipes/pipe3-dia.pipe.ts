@@ -1,9 +1,9 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'pipe2Horas'
+  name: 'pipe3Dia'
 })
-export class Pipe2HorasPipe implements PipeTransform {
+export class Pipe3DiaPipe implements PipeTransform {
 
   date : Date;
 
@@ -26,8 +26,8 @@ export class Pipe2HorasPipe implements PipeTransform {
 
       let horaEntrada = this.date.getHours();
 
-      if(horaEntrada>=(horaActual-6)){
-        return "Conectado Hace Pocas Horas";
+      if(horaEntrada>=(horaActual-12)){
+        return "Conectado Hace Menos De 12 Horas";
       }else{
         return this.date.toDateString();
       }

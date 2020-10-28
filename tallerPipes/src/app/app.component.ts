@@ -17,6 +17,12 @@ export class AppComponent {
 
   fecha12HorasAtras: Date;
 
+  fecha8HorasAtras: Date;
+
+  fecha18HorasAtras: Date;
+
+
+
 
   constructor(){
 
@@ -38,6 +44,16 @@ export class AppComponent {
      * fecha actual en milisegundos menos 43200000 milisegundos ... (12 horas)
      */
     this.fecha12HorasAtras = new Date(this.fechaActual.valueOf() - 43200000);
+
+    /**
+     * fecha actual en milisegundos menos 28800000 milisegundos ... (8 horas)
+     */
+    this.fecha8HorasAtras = new Date(this.fechaActual.valueOf() - 28800000);
+
+    /**
+     * fecha actual en milisegundos menos 64800000 milisegundos ... (18 horas)
+     */
+    this.fecha18HorasAtras = new Date(this.fechaActual.valueOf() - 64800000);
 
   
   }
